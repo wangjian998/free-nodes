@@ -69,7 +69,8 @@ def rename_node(link, index):
     except Exception:
         custom_remark = "Node" # 万一解码失败的保底名字
         
-    new_name = f"{custom_remark} {index:03d}"
+    new_name = f"{index:03d}"
+    # new_name = f"{custom_remark} {index:03d}"
     
     if link.startswith("vmess://"):
         try:

@@ -37,7 +37,8 @@ BLACKLIST_KEYWORDS = ['-1', '127.0.0.1', 'timeout', 'err', '错误', '剩余', '
 
 # ====================================================
 
-SUPPORTED_PROTOCOLS = ('vmess://', 'vless://', 'ss://', 'ssr://', 'trojan://', 'tuic://', 'hysteria2://')
+SUPPORTED_PROTOCOLS = ('vmess://', 'vless://', 'ssr://', 'trojan://', 'tuic://', 'hysteria2://')
+# SUPPORTED_PROTOCOLS = ('vmess://', 'vless://', 'ss://', 'ssr://', 'trojan://', 'tuic://', 'hysteria2://')
 
 def fetch_and_decode(url):
     if not url or not url.strip(): # 过滤掉不小心留空的链接
